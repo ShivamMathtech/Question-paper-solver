@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Bank Solver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload Question Bank</h1>
+      <form id="upload-form" enctype="multipart/form-data">
+        <input
+          type="file"
+          id="questionFile"
+          name="questionFile"
+          accept=".txt, .docx"
+          required
+        />
+        <button type="submit">Upload & Solve</button>
+      </form>
+      <div id="download-container" style="display: none">
+        <h2>Download Solved Question Bank</h2>
+        <a id="downloadLink" href="#" download>Download Solved Questions</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
